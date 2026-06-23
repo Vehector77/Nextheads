@@ -1,0 +1,57 @@
+# =====================================================
+#   Nextheads - Mensajes (soporta codigos & y MiniMessage hex &#RRGGBB)
+# =====================================================
+
+prefix: "&8[&dNextheads&8] &r"
+
+messages:
+  no-permission: "{prefix}&cNo tienes permiso para usar esto."
+  player-only: "{prefix}&cEste comando solo puede ser usado por jugadores."
+  reload-success: "{prefix}&aConfiguracion recargada correctamente."
+  cooldown: "{prefix}&cDebes esperar &e{seconds}s &cantes de sacar otra cabeza."
+  head-received: "{prefix}&aHas obtenido la cabeza de &e{target}&a."
+  target-denied: "{prefix}&c{target} &cha denegado que obtengas su cabeza."
+  deny-enabled: "{prefix}&aAhora &cnadie &apodra sacar tu cabeza."
+  deny-disabled: "{prefix}&aAhora &eotros jugadores &apodran sacar tu cabeza."
+  inventory-full: "{prefix}&cTu inventario esta lleno."
+  not-online: "{prefix}&cEse jugador no esta conectado."
+  api-loading: "{prefix}&7Cargando cabezas de la categoria &e{category}&7..."
+  api-error: "{prefix}&cError al cargar cabezas: {error}"
+  search-prompt: "{prefix}&eEscribe en el chat la palabra a buscar &7(o &ccancelar&7 para salir):"
+  search-cancelled: "{prefix}&7Busqueda cancelada."
+  search-results: "{prefix}&aSe encontraron &e{count} &acabezas para &e{query}&a."
+  search-no-results: "{prefix}&cNo se encontraron cabezas para &e{query}&c."
+  favorite-added: "{prefix}&aAnadida &e{name} &aa tus favoritos."
+  favorite-removed: "{prefix}&7Eliminada &e{name} &7de tus favoritos."
+  favorite-not-head: "{prefix}&cDebes tener una cabeza de jugador en la mano."
+  favorite-no-texture: "{prefix}&cLa cabeza en la mano no tiene textura personalizada."
+
+gui:
+  players-title: "&8» &dCabezas de Jugadores"
+  categories-title: "&8» &dCategorias de Cabezas"
+  category-title: "&8» &d{category}"
+  search-title: "&8» &dBusqueda: &e{query}"
+
+  online-count: "&aJugadores conectados: &e{count}"
+
+  next-page: "&aSiguiente pagina &7»"
+  prev-page: "&7« &aPagina anterior"
+  page-info: "&ePagina &f{page}&7/&f{total}"
+  close: "&cCerrar"
+  back: "&eVolver"
+  search-button: "&bBuscar cabeza"
+  search-button-lore:
+    - "&7Click para buscar una cabeza"
+    - "&7por nombre."
+
+help:
+  - "&8&m-----------------------------------------------"
+  - "&d&lNextheads &7by &fVehector &7v{version}"
+  - "&8&m-----------------------------------------------"
+  - "&e/cabezas &7- Abre el menu de cabezas de jugadores online."
+  - "&e/cabezas denegar &7- Activa/desactiva que otros saquen tu cabeza."
+  - "&e/cabezas admin list &7- Menu con cabezas de minecraft-heads.com."
+  - "&e/cabezas admin favorito &7- Anade/quita la cabeza en la mano a favoritos."
+  - "&e/cabezas reload &7- Recarga la configuracion."
+  - "&e/cabezas help &7- Muestra esta ayuda."
+  - "&8&m-----------------------------------------------"

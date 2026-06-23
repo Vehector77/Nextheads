@@ -1,0 +1,79 @@
+# =====================================================
+#   Nextheads - by Vehector
+#   Plugin de cabezas para Paper 1.21.X (Java 21)
+# =====================================================
+
+settings:
+  # Cooldown en segundos para sacar cabezas con /cabezas
+  cooldown-seconds: 60
+  # Tamano del inventario del menu de jugadores conectados (multiplos de 9, max 54)
+  players-menu-size: 54
+  # Tamano del menu admin con cabezas (debe ser 54 para paginacion correcta)
+  admin-menu-size: 54
+  # Cache (segundos) para las categorias de minecraft-heads.com
+  api-cache-seconds: 3600
+  # Sonido al sacar una cabeza
+  pickup-sound: "BLOCK_NOTE_BLOCK_PLING"
+  # Sonido al hacer click en items
+  click-sound: "UI_BUTTON_CLICK"
+  # Mostrar mensajes de debug en consola
+  debug: false
+
+# Formato de la cabeza obtenida con /cabezas (jugadores online)
+# Placeholders disponibles:
+#   {rank}   -> Rango de LuckPerms (prefix del jugador)
+#   {nick}   -> Nick del jugador (display name)
+#   {player} -> Nombre real del jugador
+head-format:
+  display-name: "&aCabeza de {rank} &c{nick}"
+  lore:
+    - "&7Propietario: &f{player}"
+    - "&7Rango: {rank}"
+    - ""
+    - "&8Nextheads &7by &dVehector"
+
+# Rango por defecto si LuckPerms no esta o el jugador no tiene prefix
+default-rank: "&7MIEMBRO"
+
+# Categorias de minecraft-heads.com (se usan endpoints publicos)
+# Ver: https://minecraft-heads.com/custom-heads
+categories:
+  - id: "alphabet"
+    name: "&eAlfabeto"
+    icon: "PAPER"
+  - id: "animals"
+    name: "&aAnimales"
+    icon: "BONE"
+  - id: "blocks"
+    name: "&6Bloques"
+    icon: "GRASS_BLOCK"
+  - id: "decoration"
+    name: "&dDecoracion"
+    icon: "ITEM_FRAME"
+  - id: "food-drinks"
+    name: "&cComida y Bebida"
+    icon: "GOLDEN_APPLE"
+  - id: "humans"
+    name: "&bHumanos"
+    icon: "PLAYER_HEAD"
+  - id: "humanoid"
+    name: "&3Humanoides"
+    icon: "ZOMBIE_HEAD"
+  - id: "miscellaneous"
+    name: "&fMisc"
+    icon: "CHEST"
+  - id: "monsters"
+    name: "&4Monstruos"
+    icon: "CREEPER_HEAD"
+  - id: "plants"
+    name: "&2Plantas"
+    icon: "OAK_SAPLING"
+
+# Limite maximo de cabezas a cargar por categoria (para evitar lag)
+max-heads-per-category: 500
+
+# Categoria virtual de Favoritos (se llena con /cabezas admin favorito).
+# Aparece automaticamente al final del menu de categorias.
+favorites-category:
+  name: "&6&lFavoritos"
+  icon: "NETHER_STAR"

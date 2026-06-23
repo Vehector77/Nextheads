@@ -1,0 +1,28 @@
+name: Nextheads
+version: '${project.version}'
+main: com.vehector.nextheads.Nextheads
+api-version: '1.21'
+author: Vehector
+description: Plugin de cabezas con menus, cooldowns, denegar, y catalogo de minecraft-heads.com
+softdepend: [LuckPerms, PlaceholderAPI]
+commands:
+  cabezas:
+    description: Comando principal de Nextheads
+    usage: /cabezas [denegar|admin|reload|help]
+    aliases: [heads, nextheads]
+permissions:
+  nextheads.use:
+    description: Permite usar /cabezas para abrir el menu de cabezas
+    default: true
+  nextheads.deny:
+    description: Permite usar /cabezas denegar
+    default: true
+  nextheads.bypass:
+    description: Permite obtener cabezas ignorando cooldown y denegar
+    default: op
+  nextheads.admin:
+    description: Acceso al menu admin con cabezas de minecraft-heads.com
+    default: op
+  nextheads.reload:
+    description: Permite recargar la configuracion
+    default: op
